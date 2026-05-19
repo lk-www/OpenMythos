@@ -1,7 +1,34 @@
-site_name: My Docs
-theme:
-  name: material  # 非常に美しいモダンなテーマ
+# 1. サイトの基本情報
+site_name: "マイ・ドキュメントサイト"
+site_description: "GitHub Pagesで公開するMkDocsのテストサイトです。"
+site_author: "あなたの名前"
+site_url: "https://lk-www.github.io/OpenMythos/"
 
+# 2. デザイン・テーマ設定（超人気テーマのMaterialを指定）
+theme:
+  name: material
+  language: ja        # 検索機能などを日本語対応にする
+  palette:
+    # ライトモード・ダークモードの切り替えスイッチ
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードへ
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードへ
+  features:
+    - navigation.tabs # 画面上部にメインメニューをタブ表示
+
+# 3. リポジトリ連携（画面右上にGitHubリンクを表示 & 編集ボタンの追加）
+repo_name: "GitHub Repository"
+repo_url: "https://github.com/lk-www/OpenMythos"
+edit_uri: "docs/"
+
+# 4. ナビゲーション（目次・ページ構成）
 nav:
   - ホーム: index.md
   - OpenMythos: OpenMythos.md
